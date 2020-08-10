@@ -185,3 +185,19 @@ CREATE TABLE `lms_database`. `maker program` (
   FOREIGN KEY (`tech_type_id`) REFERENCES `tech type` (`Id`)
 ) ;
 
+
+
+CREATE TABLE `lms_database`. `app_parameters` (
+  `Id` int NOT NULL,
+  `key_type` varchar(45) DEFAULT NULL,
+  `key_value` varchar(10) DEFAULT NULL,
+  `key_text` varchar(20) DEFAULT NULL,
+  `cur_status` varchar(1) DEFAULT NULL,
+  `lastupd_user` varchar(45) DEFAULT NULL,
+  `lastupd_stamp` varchar(45) DEFAULT NULL,
+  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_user` varchar(45) DEFAULT NULL,
+  `seq_num` smallint DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ;
+
