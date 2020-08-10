@@ -251,3 +251,20 @@ CREATE TABLE `lms_database`. `mentor tech stack` (
   FOREIGN KEY (`mentor_id`) REFERENCES `mentor` (`Id`),
   FOREIGN KEY (`tech_stack_id`) REFERENCES `tech stack` (`Id`)
 );
+
+
+CREATE TABLE  `lms_database`.`lab threshold` (
+  `Id` int NOT NULL,
+  `lab_id` int DEFAULT NULL,
+  `lab_capacity` int DEFAULT NULL,
+  `lead_threshold` int DEFAULT NULL,
+  `ideation_engg_threshold` int DEFAULT NULL,
+  `buddy_engg_threshold` varchar(45) DEFAULT NULL,
+  `status` tinyint DEFAULT NULL,
+  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_user` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Id`),
+  FOREIGN KEY (`lab_id`) REFERENCES `lab` (`Id`)
+);
+
+
