@@ -201,3 +201,15 @@ CREATE TABLE `lms_database`. `app_parameters` (
   PRIMARY KEY (`Id`)
 ) ;
 
+
+CREATE TABLE `lms_database`. `lab` (
+  `Id` int NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `location` varchar(45) DEFAULT NULL,
+  `address` varchar(45) DEFAULT NULL,
+  `status` tinyint DEFAULT NULL,
+  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_user` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+);
+
