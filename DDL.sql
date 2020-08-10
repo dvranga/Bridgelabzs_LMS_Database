@@ -226,3 +226,15 @@ CREATE TABLE `lms_database`. `mentor` (
   FOREIGN KEY (`lab_id`) REFERENCES `lab` (`Id`)
 ) ;
 
+
+CREATE TABLE `lms_database`.`mentor ideation map` (
+  `Id` int NOT NULL,
+  `mentor_id` int DEFAULT NULL,
+  `parent_id` int DEFAULT NULL,
+  `status` tinyint DEFAULT NULL,
+  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_user` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Id`),
+  FOREIGN KEY (`mentor_id`) REFERENCES `mentor` (`Id`)
+);
+
