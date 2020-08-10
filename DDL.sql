@@ -238,3 +238,16 @@ CREATE TABLE `lms_database`.`mentor ideation map` (
   FOREIGN KEY (`mentor_id`) REFERENCES `mentor` (`Id`)
 );
 
+
+CREATE TABLE `lms_database`. `mentor tech stack` (
+  `Id` int NOT NULL,
+  `mentor_id` int DEFAULT NULL,
+  `tech_stack_id` int DEFAULT NULL,
+  `datetime` datetime DEFAULT NULL,
+  `status` tinyint DEFAULT NULL,
+  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_user` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Id`),
+  FOREIGN KEY (`mentor_id`) REFERENCES `mentor` (`Id`),
+  FOREIGN KEY (`tech_stack_id`) REFERENCES `tech stack` (`Id`)
+);
