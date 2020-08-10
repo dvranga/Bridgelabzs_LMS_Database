@@ -165,3 +165,23 @@ CREATE TABLE `lms_database`. `tech type` (
   PRIMARY KEY (`Id`)
 );
 
+
+CREATE TABLE `lms_database`. `maker program` (
+  `Id` int NOT NULL,
+  `program_name` varchar(45) DEFAULT NULL,
+  `program_type` varchar(45) DEFAULT NULL,
+  `program_link` longtext,
+  `tech_stack_id` int DEFAULT NULL,
+  `tech_type_id` int DEFAULT NULL,
+  `is_program_approved` tinyint DEFAULT NULL,
+  `Description` varchar(45) DEFAULT NULL,
+  `status` tinyint DEFAULT NULL,
+  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_user` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Id`),
+  KEY `tech_stack_id` (`tech_stack_id`),
+  KEY `tech_type_id` (`tech_type_id`),
+  FOREIGN KEY (`tech_stack_id`) REFERENCES `tech stack` (`Id`),
+  FOREIGN KEY (`tech_type_id`) REFERENCES `tech type` (`Id`)
+) ;
+
