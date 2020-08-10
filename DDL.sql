@@ -129,3 +129,16 @@ CREATE TABLE `lms_database`.`candidate document` (
   FOREIGN KEY (`candidate_id`) REFERENCES `fellowship candidate` (`Id`)
 );
 
+
+
+CREATE TABLE `lms_database`. `company` (
+  `Id` int NOT NULL,
+  `name` int DEFAULT NULL,
+  `address` varchar(45) DEFAULT NULL,
+  `location` varchar(45) DEFAULT NULL,
+  `status` tinyint DEFAULT NULL,
+  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_user` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+);
+
