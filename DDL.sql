@@ -213,3 +213,16 @@ CREATE TABLE `lms_database`. `lab` (
   PRIMARY KEY (`Id`)
 );
 
+
+CREATE TABLE `lms_database`. `mentor` (
+  `Id` int NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `mentor_type` varchar(45) NOT NULL,
+  `lab_id` int DEFAULT NULL,
+  `status` tinyint DEFAULT NULL,
+  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_user` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Id`),
+  FOREIGN KEY (`lab_id`) REFERENCES `lab` (`Id`)
+) ;
+
