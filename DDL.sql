@@ -90,4 +90,30 @@ CREATE TABLE `lms_database`. `candidate bank details` (
   `creator_user` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`Id`),
   FOREIGN KEY (`Candidate Id`) REFERENCES `fellowship candidate` (`Id`)
-) 
+) ;
+
+
+CREATE TABLE `lms_database`. `candidate qualification` (
+  `Id` int NOT NULL,
+  `candidate_id` int DEFAULT NULL,
+  `diploma` varchar(45) DEFAULT NULL,
+  `degree_name` varchar(45) DEFAULT NULL,
+  `is_degree_name_verified` tinyint DEFAULT NULL,
+  `employee_decipline` varchar(45) DEFAULT NULL,
+  `is_employee_decipline_verified` tinyint DEFAULT NULL,
+  `passing_year` varchar(45) DEFAULT NULL,
+  `is_passing_year_verified` tinyint DEFAULT NULL,
+  `aggr_per` double DEFAULT NULL,
+  `final_year_per` double DEFAULT NULL,
+  `is_final_year_per_verified` tinyint DEFAULT NULL,
+  `training_institute` varchar(45) DEFAULT NULL,
+  `is_training_institute_verified` tinyint DEFAULT NULL,
+  `training_duration_month` varchar(45) DEFAULT NULL,
+  `is_training_duration_month_verified` tinyint DEFAULT NULL,
+  `other_training` varchar(45) DEFAULT NULL,
+  `is_other_training_verified` tinyint DEFAULT NULL,
+  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_user` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Id`),
+  FOREIGN KEY (`candidate_id`) REFERENCES `fellowship candidate` (`Id`)
+);
