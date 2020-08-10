@@ -308,3 +308,6 @@ CREATE TABLE `lms_database`.`candidate stack assignment` (
   FOREIGN KEY (`candidate_id`) REFERENCES `fellowship candidate` (`Id`)
 ) ;
 
+
+ALTER TABLE `lms_database`.`app_parameters` 
+CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
