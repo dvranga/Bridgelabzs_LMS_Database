@@ -295,3 +295,16 @@ CREATE TABLE `lms_database`. `company requirement` (
 ) ;
 
 
+CREATE TABLE `lms_database`.`candidate stack assignment` (
+  `Id` int NOT NULL,
+  `requirement_id` int DEFAULT NULL,
+  `candidate_id` int DEFAULT NULL,
+  `assign_date` date DEFAULT NULL,
+  `status` tinyint DEFAULT NULL,
+  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_user` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Id`),
+  FOREIGN KEY (`requirement_id`) REFERENCES `company requirement` (`Id`),
+  FOREIGN KEY (`candidate_id`) REFERENCES `fellowship candidate` (`Id`)
+) ;
+
