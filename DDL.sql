@@ -311,3 +311,52 @@ CREATE TABLE `lms_database`.`candidate stack assignment` (
 
 ALTER TABLE `lms_database`.`app_parameters` 
 CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
+
+ALTER TABLE `lms_database`.`candidate qualification` 
+CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
+
+
+
+ALTER TABLE `lms_database`.`candidate document` 
+CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
+
+ALTER TABLE `lms_database`.`candidate stack assignment` 
+CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
+
+ALTER TABLE `lms_database`.`company` 
+CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
+
+ALTER TABLE `lms_database`.`company requirement` 
+CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
+
+ALTER TABLE `lms_database`.`hired candidate` 
+CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
+
+ALTER TABLE `lms_database`.`lab` 
+CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
+
+ALTER TABLE `lms_database`.`lab threshold` 
+CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
+
+ALTER TABLE `lms_database`.`maker program` 
+CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
+
+ALTER TABLE `lms_database`.`mentor` 
+CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
+
+ALTER TABLE `lms_database`.`mentor tech stack` 
+CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
+
+ALTER TABLE `lms_database`.`mentor ideation map` 
+CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
+
+ALTER TABLE `lms_database`.`tech type` 
+CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
+
+ALTER TABLE `lms_database`.`tech stack` 
+CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
+
+ALTER TABLE `lms_database`.`userdetails` 
+CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
+
+

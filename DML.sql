@@ -1,0 +1,1 @@
+INSERT INTO `lms_database`.`userdetails` (`Id`, `email`, `first_name`, `last_name`, `Password`, `contact_number`, `verified`, `creator_stamp`, `creator_user`) VALUES ('1', 'devangmranganth@gmail.com', 'ranganath', 'devangm', '@Reset1998', '7483247032', '0', '2020-08-10 00:00:01', 'ranganath');
