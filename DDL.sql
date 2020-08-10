@@ -155,3 +155,13 @@ CREATE TABLE `lms_database`.`tech stack` (
   PRIMARY KEY (`Id`)
 ) ;
 
+
+CREATE TABLE `lms_database`. `tech type` (
+  `Id` int NOT NULL,
+  `type_name` varchar(45) DEFAULT NULL,
+  `cur_status` tinyint DEFAULT NULL,
+  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_user` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+);
+
