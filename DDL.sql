@@ -72,3 +72,22 @@ CREATE TABLE `lms_database`. `fellowship candidate` (
   `Remark` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`Id`)
 ) ;
+
+
+CREATE TABLE `lms_database`. `candidate bank details` (
+  `Id` int NOT NULL,
+  `Candidate Id` int DEFAULT NULL,
+  `Name` varchar(45) DEFAULT NULL,
+  `Account Number` int DEFAULT NULL,
+  `Is Account Num Verified` tinyint DEFAULT NULL,
+  `ifsc code` varchar(25) DEFAULT NULL,
+  `is_ifsc_code_verified` varchar(45) DEFAULT NULL,
+  `pan_number` varchar(25) DEFAULT NULL,
+  `is_pan_number_verified` tinyint DEFAULT NULL,
+  `addhaar_num` int DEFAULT NULL,
+  `is_addhaar_num_verified` tinyint DEFAULT NULL,
+  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_user` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`Id`),
+  FOREIGN KEY (`Candidate Id`) REFERENCES `fellowship candidate` (`Id`)
+) 
