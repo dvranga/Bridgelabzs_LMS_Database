@@ -267,4 +267,31 @@ CREATE TABLE  `lms_database`.`lab threshold` (
   FOREIGN KEY (`lab_id`) REFERENCES `lab` (`Id`)
 );
 
+CREATE TABLE `lms_database`. `company requirement` (
+  `Id` int NOT NULL,
+  `company_id` int DEFAULT NULL,
+  `requested_month` date DEFAULT NULL,
+  `city` varchar(45) DEFAULT NULL,
+  `is_doc_verifrication` tinyint DEFAULT NULL,
+  `requirement_doc_path` varchar(45) DEFAULT NULL,
+  `no_of_engg` int DEFAULT NULL,
+  `special_remark` varchar(45) DEFAULT NULL,
+  `status` tinyint DEFAULT NULL,
+  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_user` varchar(45) DEFAULT NULL,
+  `tech_stack_id` int DEFAULT NULL,
+  `tech_type_id` int DEFAULT NULL,
+  `maker_program_id` int DEFAULT NULL,
+  `lead_id` int DEFAULT NULL,
+  `ideation_engg_id` int DEFAULT NULL,
+  `buddy_engg_id` int DEFAULT NULL,
+  PRIMARY KEY (`Id`),
+  FOREIGN KEY (`company_id`) REFERENCES `company` (`Id`),
+  FOREIGN KEY (`tech_stack_id`) REFERENCES `tech stack` (`Id`),
+  FOREIGN KEY (`tech_type_id`) REFERENCES `tech type` (`Id`),
+  FOREIGN KEY (`maker_program_id`) REFERENCES `maker program` (`Id`),
+  FOREIGN KEY (`lead_id`) REFERENCES `mentor` (`Id`),
+  FOREIGN KEY (`ideation_engg_id`) REFERENCES `mentor ideation map` (`Id`)
+) ;
+
 
