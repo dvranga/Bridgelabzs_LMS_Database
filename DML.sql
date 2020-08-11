@@ -66,3 +66,15 @@ INSERT INTO `lms_database`.`candidate document` (`Id`, `candidate_id`, `doc_type
 INSERT INTO `lms_database`.`candidate document` (`Id`, `candidate_id`, `doc_type`, `creator_stamp`, `creator_user`) VALUES ('8', '8', 'pdf', '2020-08-11 10:32:00', 'ranganath');
 INSERT INTO `lms_database`.`candidate document` (`Id`, `candidate_id`, `doc_type`, `creator_stamp`, `creator_user`) VALUES ('9', '9', 'pdf', '2020-08-11 10:33:00', 'ranganath');
 INSERT INTO `lms_database`.`candidate document` (`Id`, `candidate_id`, `doc_type`, `creator_stamp`, `creator_user`) VALUES ('10', '10', 'pdf', '2020-08-11 10:34:00', 'ranganath');
+
+
+INSERT INTO `lms_database`.`company` (`Id`, `name`, `address`, `location`, `status`, `creator_stamp`, `creator_user`) VALUES ('1', 'thoughtworks', 'hyderabad', 'telangana', '0', '2020-08-11 10:30:00', 'ranganath');
+INSERT INTO `lms_database`.`company` (`Id`, `name`, `address`, `location`, `status`, `creator_stamp`, `creator_user`) VALUES ('2', 'vinuculam', 'hyderabad', 'telangana', '0', '2020-08-11 10:30:00', 'ranganath');
+INSERT INTO `lms_database`.`company` (`Id`, `name`, `address`, `location`, `status`, `creator_stamp`, `creator_user`) VALUES ('3', 'emphasis', 'bangalore', 'karnataka', '0', '2020-08-11 10:30:00', 'ranganath');
+INSERT INTO `lms_database`.`company` (`Id`, `name`, `address`, `location`, `status`, `creator_stamp`, `creator_user`) VALUES ('4', 'facebook', 'mumbai', 'mahatastra', '0', '2020-08-11 10:30:00', 'ranganath');
+INSERT INTO `lms_database`.`company` (`Id`, `name`, `address`, `location`, `status`, `creator_stamp`, `creator_user`) VALUES ('5', 'google', 'hyderabad', 'telangana', '0', '2020-08-11 10:30:00', 'ranganath');
+INSERT INTO `lms_database`.`company` (`Id`, `name`, `address`, `location`, `status`, `creator_stamp`, `creator_user`) VALUES ('6', 'microsoft', 'bangalore', 'telangana', '0', '2020-08-11 10:30:00', 'ranganath');
+INSERT INTO `lms_database`.`company` (`Id`, `name`, `address`, `location`, `status`, `creator_stamp`, `creator_user`) VALUES ('7', 'thoughtworks', 'hyderabad', 'telangana', '0', '2020-08-11 10:30:00', 'ranganath');
+INSERT INTO `lms_database`.`company` (`Id`, `name`, `address`, `location`, `status`, `creator_stamp`, `creator_user`) VALUES ('8', 'wipro', 'hyderabad', 'telangana', '0', '2020-08-11 10:30:00', 'ranganath');
+INSERT INTO `lms_database`.`company` (`Id`, `name`, `address`, `location`, `status`, `creator_stamp`, `creator_user`) VALUES ('9', 'tcs', 'bangalore', 'karnataka', '0', '2020-08-11 10:30:00', 'ranganath');
+INSERT INTO `lms_database`.`company` (`Id`, `name`, `address`, `location`, `status`, `creator_stamp`, `creator_user`) VALUES ('10', 'thoughtworks', 'hyderabad', 'telangana', '0', '2020-08-11 10:30:00', 'ranganath');
