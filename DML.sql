@@ -112,3 +112,17 @@ INSERT INTO `lms_database`.`mentor ideation map` (`Id`, `mentor_id`, `parent_id`
 INSERT INTO `lms_database`.`mentor ideation map` (`Id`, `mentor_id`, `parent_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('3', '1', '3', '0', '2020-08-11 11:42:00', 'ranganath');
 INSERT INTO `lms_database`.`mentor ideation map` (`Id`, `mentor_id`, `parent_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('4', '1', '4', '0', '2020-08-11 11:43:00', 'ranganath');
 INSERT INTO `lms_database`.`mentor ideation map` (`Id`, `mentor_id`, `parent_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('5', '1', '5', '0', '2020-08-11 11:44:00', 'ranganath');
+
+
+INSERT INTO `lms_database`.`tech stack` (`Id`, `tech_name`, `cur_status`, `creator_stamp`, `creator_user`) VALUES ('1', 'java', 'A', '2020-08-11 11:46:00', 'ranganath');
+INSERT INTO `lms_database`.`tech stack` (`Id`, `tech_name`, `cur_status`, `creator_stamp`, `creator_user`) VALUES ('2', 'php', 'A', '2020-08-11 11:47:00', 'ranganath');
+INSERT INTO `lms_database`.`tech stack` (`Id`, `tech_name`, `cur_status`, `creator_stamp`, `creator_user`) VALUES ('3', 'python', 'A', '2020-08-11 11:48:00', 'ranganath');
+INSERT INTO `lms_database`.`tech stack` (`Id`, `tech_name`, `cur_status`, `creator_stamp`, `creator_user`) VALUES ('4', 'java', 'A', '2020-08-11 11:49:00', 'ranganath');
+INSERT INTO `lms_database`.`tech stack` (`Id`, `tech_name`, `cur_status`, `creator_stamp`, `creator_user`) VALUES ('5', 'mobile', 'A', '2020-08-11 11:50:00', 'ranganath');
+
+
+INSERT INTO `lms_database`.`tech type` (`Id`, `type_name`, `cur_status`, `creator_stamp`, `creator_user`) VALUES ('1', 'full stack', 'A', '2020-08-11 11:53:00', 'ranganath');
+INSERT INTO `lms_database`.`tech type` (`Id`, `type_name`, `cur_status`, `creator_stamp`, `creator_user`) VALUES ('2', 'back end', 'A', '2020-08-11 11:54:00', 'ranganath');
+INSERT INTO `lms_database`.`tech type` (`Id`, `type_name`, `cur_status`, `creator_stamp`, `creator_user`) VALUES ('3', 'full stack', 'A', '2020-08-11 11:55:00', 'ranganath');
+INSERT INTO `lms_database`.`tech type` (`Id`, `type_name`, `cur_status`, `creator_stamp`, `creator_user`) VALUES ('4', 'front end', 'A', '2020-08-11 11:56:00', 'ranganath');
+INSERT INTO `lms_database`.`tech type` (`Id`, `type_name`, `cur_status`, `creator_stamp`, `creator_user`) VALUES ('5', 'full stack', 'A', '2020-08-11 11:57:00', 'ranganath');
