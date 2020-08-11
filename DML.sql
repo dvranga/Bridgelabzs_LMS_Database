@@ -132,3 +132,10 @@ INSERT INTO `lms_database`.`mentor tech stack` (`Id`, `mentor_id`, `tech_stack_i
 INSERT INTO `lms_database`.`mentor tech stack` (`Id`, `mentor_id`, `tech_stack_id`, `datetime`, `status`, `creator_stamp`, `creator_user`) VALUES ('3', '3', '3', '2020-08-11 12:00:00', '0', '2020-08-11 11:59:00', 'ranganath');
 INSERT INTO `lms_database`.`mentor tech stack` (`Id`, `mentor_id`, `tech_stack_id`, `datetime`, `status`, `creator_stamp`, `creator_user`) VALUES ('4', '4', '4', '2020-08-11 12:00:00', '0', '2020-08-11 12:00:00', 'ranganath');
 INSERT INTO `lms_database`.`mentor tech stack` (`Id`, `mentor_id`, `tech_stack_id`, `datetime`, `status`, `creator_stamp`, `creator_user`) VALUES ('5', '5', '5', '2020-08-11 12:01:00', '0', '2020-08-11 12:01:00', 'ranganath');
+
+
+INSERT INTO `lms_database`.`lab threshold` (`Id`, `lab_id`, `lab_capacity`, `status`, `creator_stamp`, `creator_user`) VALUES ('1', '1', '100', '0', '2020-08-11 12:04:00', 'ranganath');
+INSERT INTO `lms_database`.`lab threshold` (`Id`, `lab_id`, `lab_capacity`, `status`, `creator_stamp`, `creator_user`) VALUES ('2', '2', '100', '0', '2020-08-11 12:05:00', 'ranganath');
+INSERT INTO `lms_database`.`lab threshold` (`Id`, `lab_id`, `lab_capacity`, `status`, `creator_stamp`, `creator_user`) VALUES ('3', '3', '100', '0', '2020-08-11 12:06:00', 'ranganath');
+INSERT INTO `lms_database`.`lab threshold` (`Id`, `lab_id`, `lab_capacity`, `status`, `creator_stamp`, `creator_user`) VALUES ('4', '4', '100', '0', '2020-08-11 12:07:00', 'ranganath');
+INSERT INTO `lms_database`.`lab threshold` (`Id`, `lab_id`, `lab_capacity`, `status`, `creator_stamp`, `creator_user`) VALUES ('5', '5', '100', '0', '2020-08-11 12:08:00', 'ranganath');
