@@ -92,14 +92,16 @@ INSERT INTO `lms_database`.`app_parameters` (`Id`, `key_type`, `key_value`, `key
 INSERT INTO `lms_database`.`app_parameters` (`Id`, `key_type`, `key_value`, `key_text`, `cur_status`, `creator_stamp`, `creator_user`, `seq_num`) VALUES ('10', 'DOC_STATUS', 'RECEVD', 'Received', 'A', '2020-08-11 11:01:00', 'ranganath', '2');
 
 
-INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('1', 'pooja', 'ideation', '1', '0', '2020-08-11 11:13:00', 'ranganath');
-INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('2', 'venkat', 'lead', '1', '0', '2020-08-11 11:14:00', 'ranganath');
-INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('3', 'aishwarya', 'lead', '1', '0', '2020-08-11 11:15:00', 'ranganath');
-INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('4', 'vivek', 'lead', '1', '0', '2020-08-11 11:16:00', 'ranganath');
-INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('5', 'kalpesh', 'ideation', '1', '0', '2020-08-11 11:17:00', 'ranganath');
 
 INSERT INTO `lms_database`.`lab` (`Id`, `location`, `address`, `status`, `creator_stamp`, `creator_user`) VALUES ('1', 'bengalore', 'karnataka', '0', '2020-08-11 11:16:00', 'ranganath');
 INSERT INTO `lms_database`.`lab` (`Id`, `location`, `address`, `status`, `creator_stamp`, `creator_user`) VALUES ('2', 'mumbai', 'maharastra', '0', '2020-08-11 11:16:00', 'ranganath');
 INSERT INTO `lms_database`.`lab` (`Id`, `location`, `address`, `status`, `creator_stamp`, `creator_user`) VALUES ('3', 'pune', 'maharastra', '0', '2020-08-11 11:16:00', 'ranganath');
 INSERT INTO `lms_database`.`lab` (`Id`, `location`, `address`, `status`, `creator_stamp`, `creator_user`) VALUES ('4', 'bengalore', 'karnataka', '0', '2020-08-11 11:16:00', 'ranganath');
 INSERT INTO `lms_database`.`lab` (`Id`, `location`, `address`, `status`, `creator_stamp`, `creator_user`) VALUES ('5', 'chennai', 'tamilnadu', '0', '2020-08-11 11:16:00', 'ranganath');
+
+
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('1', 'pooja', 'ideation', '1', '0', '2020-08-11 11:13:00', 'ranganath');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('2', 'venkat', 'lead', '2', '0', '2020-08-11 11:14:00', 'ranganath');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('3', 'aishwarya', 'lead', '3', '0', '2020-08-11 11:15:00', 'ranganath');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('4', 'vivek', 'lead', '4', '0', '2020-08-11 11:16:00', 'ranganath');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('5', 'kalpesh', 'ideation', '5', '0', '2020-08-11 11:17:00', 'ranganath');
