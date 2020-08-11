@@ -149,3 +149,45 @@ INSERT INTO `lms_database`.`company requirement` (`Id`, `company_id`, `city`, `i
 
 INSERT INTO `lms_database`.`candidate stack assignment` (`Id`, `requirement_id`, `candidate_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('1', '1', '1', '0', '2020-08-11 12:14:00', 'ranganath');
 INSERT INTO `lms_database`.`candidate stack assignment` (`Id`, `requirement_id`, `candidate_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('2', '2', '2', '0', '2020-08-11 12:15:00', 'ranganath');
+
+ALTER TABLE `lms_database`.`app_parameters` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+
+ALTER TABLE `lms_database`.`candidate bank details` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+
+ALTER TABLE `lms_database`.`candidate document` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+
+ALTER TABLE `lms_database`.`candidate qualification` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+
+ALTER TABLE `lms_database`.`candidate stack assignment` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+
+ALTER TABLE `lms_database`.`company` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `lms_database`.`company requirement` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `lms_database`.`fellowship candidate` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `lms_database`.`hired candidate` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `lms_database`.`lab` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `lms_database`.`lab threshold` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `lms_database`.`maker program` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `lms_database`.`mentor` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `lms_database`.`mentor tech stack` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `lms_database`.`mentor ideation map` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `lms_database`.`tech type` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `lms_database`.`tech stack` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
+ALTER TABLE `lms_database`.`userdetails` 
+CHANGE COLUMN `Id` `Id` INT NOT NULL AUTO_INCREMENT ;
