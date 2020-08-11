@@ -22,3 +22,8 @@ from `lms_database`.`fellowship candidate`
 where `Id`In(select `Id`
 from `lms_database`.`candidate bank details`
 where `Account Number`is null);
+
+select `First Name`
+from `lms_database`.`fellowship candidate`
+where `Joining Date` like "%_____12%"
+
