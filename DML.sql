@@ -126,3 +126,9 @@ INSERT INTO `lms_database`.`tech type` (`Id`, `type_name`, `cur_status`, `creato
 INSERT INTO `lms_database`.`tech type` (`Id`, `type_name`, `cur_status`, `creator_stamp`, `creator_user`) VALUES ('3', 'full stack', 'A', '2020-08-11 11:55:00', 'ranganath');
 INSERT INTO `lms_database`.`tech type` (`Id`, `type_name`, `cur_status`, `creator_stamp`, `creator_user`) VALUES ('4', 'front end', 'A', '2020-08-11 11:56:00', 'ranganath');
 INSERT INTO `lms_database`.`tech type` (`Id`, `type_name`, `cur_status`, `creator_stamp`, `creator_user`) VALUES ('5', 'full stack', 'A', '2020-08-11 11:57:00', 'ranganath');
+
+INSERT INTO `lms_database`.`mentor tech stack` (`Id`, `mentor_id`, `tech_stack_id`, `datetime`, `status`, `creator_stamp`, `creator_user`) VALUES ('1', '1', '1', '2020-08-11 11:58:00', '0', '2020-08-11 11:58:00', 'ranganath');
+INSERT INTO `lms_database`.`mentor tech stack` (`Id`, `mentor_id`, `tech_stack_id`, `datetime`, `status`, `creator_stamp`, `creator_user`) VALUES ('2', '2', '2', '2020-08-11 11:59:00', '0', '2020-08-11 11:58:00', 'ranganath');
+INSERT INTO `lms_database`.`mentor tech stack` (`Id`, `mentor_id`, `tech_stack_id`, `datetime`, `status`, `creator_stamp`, `creator_user`) VALUES ('3', '3', '3', '2020-08-11 12:00:00', '0', '2020-08-11 11:59:00', 'ranganath');
+INSERT INTO `lms_database`.`mentor tech stack` (`Id`, `mentor_id`, `tech_stack_id`, `datetime`, `status`, `creator_stamp`, `creator_user`) VALUES ('4', '4', '4', '2020-08-11 12:00:00', '0', '2020-08-11 12:00:00', 'ranganath');
+INSERT INTO `lms_database`.`mentor tech stack` (`Id`, `mentor_id`, `tech_stack_id`, `datetime`, `status`, `creator_stamp`, `creator_user`) VALUES ('5', '5', '5', '2020-08-11 12:01:00', '0', '2020-08-11 12:01:00', 'ranganath');
