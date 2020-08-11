@@ -11,3 +11,9 @@ select `First Name`
  from `lms_database`.`tech stack`
  where `tech_name` is null);
  
+select `First Name`
+from `lms_database`.`fellowship candidate`
+where `Id`In(select `Id`
+from `lms_database`.`candidate document`
+where `doc_type`is null);
+
