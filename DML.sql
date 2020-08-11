@@ -78,3 +78,16 @@ INSERT INTO `lms_database`.`company` (`Id`, `name`, `address`, `location`, `stat
 INSERT INTO `lms_database`.`company` (`Id`, `name`, `address`, `location`, `status`, `creator_stamp`, `creator_user`) VALUES ('8', 'wipro', 'hyderabad', 'telangana', '0', '2020-08-11 10:30:00', 'ranganath');
 INSERT INTO `lms_database`.`company` (`Id`, `name`, `address`, `location`, `status`, `creator_stamp`, `creator_user`) VALUES ('9', 'tcs', 'bangalore', 'karnataka', '0', '2020-08-11 10:30:00', 'ranganath');
 INSERT INTO `lms_database`.`company` (`Id`, `name`, `address`, `location`, `status`, `creator_stamp`, `creator_user`) VALUES ('10', 'thoughtworks', 'hyderabad', 'telangana', '0', '2020-08-11 10:30:00', 'ranganath');
+
+
+INSERT INTO `lms_database`.`app_parameters` (`Id`, `key_type`, `key_value`, `key_text`, `cur_status`, `creator_stamp`, `creator_user`, `seq_num`) VALUES ('1', 'DOC_STATUS', 'PND', 'Pending', 'A', '2020-08-11 10:53:00', 'ranganath', '1');
+INSERT INTO `lms_database`.`app_parameters` (`Id`, `key_type`, `key_value`, `key_text`, `cur_status`, `creator_stamp`, `creator_user`, `seq_num`) VALUES ('2', 'DOC_STATUS', 'RECEVD', 'Received', 'A', '2020-08-11 10:54:00', 'ranganath', '2');
+INSERT INTO `lms_database`.`app_parameters` (`Id`, `key_type`, `key_value`, `key_text`, `cur_status`, `creator_stamp`, `creator_user`, `seq_num`) VALUES ('3', 'CUR_STATUS', 'ACTV', 'Active', 'A', '2020-08-11 10:54:00', 'ranganath', '1');
+INSERT INTO `lms_database`.`app_parameters` (`Id`, `key_type`, `key_value`, `key_text`, `cur_status`, `creator_stamp`, `creator_user`, `seq_num`) VALUES ('4', 'DOC_STATUS', 'RECEVD', 'Received', 'A', '2020-08-11 10:55:00', 'ranganath', '2');
+INSERT INTO `lms_database`.`app_parameters` (`Id`, `key_type`, `key_value`, `key_text`, `cur_status`, `creator_stamp`, `creator_user`, `seq_num`) VALUES ('5', 'CUR_STATUS', 'ACTV', 'Active', 'A', '2020-08-11 10:56:00', 'ranganath', '1');
+INSERT INTO `lms_database`.`app_parameters` (`Id`, `key_type`, `key_value`, `key_text`, `cur_status`, `creator_stamp`, `creator_user`, `seq_num`) VALUES ('6', 'DOC_STATUS', 'RECEVD', 'Received', 'A', '2020-08-11 10:57:00', 'ranganath', '2');
+INSERT INTO `lms_database`.`app_parameters` (`Id`, `key_type`, `key_value`, `key_text`, `cur_status`, `creator_stamp`, `creator_user`, `seq_num`) VALUES ('7', 'CUR_STATUS', 'IACTV', 'Inactive', 'A', '2020-08-11 10:58:00', 'ranganath', '1');
+INSERT INTO `lms_database`.`app_parameters` (`Id`, `key_type`, `key_value`, `key_text`, `cur_status`, `creator_stamp`, `creator_user`, `seq_num`) VALUES ('8', 'DOC_STATUS', 'RECEVD', 'Received', 'A', '2020-08-11 10:59:00', 'ranganath', '2');
+INSERT INTO `lms_database`.`app_parameters` (`Id`, `key_type`, `key_value`, `key_text`, `cur_status`, `creator_stamp`, `creator_user`, `seq_num`) VALUES ('9', 'CUR_STATUS', 'IACTV', 'Inactive', 'A', '2020-08-11 11:00:00', 'ranganath', '1');
+INSERT INTO `lms_database`.`app_parameters` (`Id`, `key_type`, `key_value`, `key_text`, `cur_status`, `creator_stamp`, `creator_user`, `seq_num`) VALUES ('10', 'DOC_STATUS', 'RECEVD', 'Received', 'A', '2020-08-11 11:01:00', 'ranganath', '2');
+
