@@ -105,3 +105,10 @@ INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `sta
 INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('3', 'aishwarya', 'lead', '3', '0', '2020-08-11 11:15:00', 'ranganath');
 INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('4', 'vivek', 'lead', '4', '0', '2020-08-11 11:16:00', 'ranganath');
 INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('5', 'kalpesh', 'ideation', '5', '0', '2020-08-11 11:17:00', 'ranganath');
+
+
+INSERT INTO `lms_database`.`mentor ideation map` (`Id`, `mentor_id`, `parent_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('1', '1', '1', '0', '2020-08-11 11:40:00', 'ranganath');
+INSERT INTO `lms_database`.`mentor ideation map` (`Id`, `mentor_id`, `parent_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('2', '1', '2', '0', '2020-08-11 11:41:00', 'ranganath');
+INSERT INTO `lms_database`.`mentor ideation map` (`Id`, `mentor_id`, `parent_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('3', '1', '3', '0', '2020-08-11 11:42:00', 'ranganath');
+INSERT INTO `lms_database`.`mentor ideation map` (`Id`, `mentor_id`, `parent_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('4', '1', '4', '0', '2020-08-11 11:43:00', 'ranganath');
+INSERT INTO `lms_database`.`mentor ideation map` (`Id`, `mentor_id`, `parent_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('5', '1', '5', '0', '2020-08-11 11:44:00', 'ranganath');
