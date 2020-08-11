@@ -23,7 +23,33 @@ where `Id`In(select `Id`
 from `lms_database`.`candidate bank details`
 where `Account Number`is null);
 
+(select `*`
+from `lms_database`.`fellowship candidate`
+where `Bank Information`is null);
+
+
 select `First Name`
 from `lms_database`.`fellowship candidate`
-where `Joining Date` like "%_____12%"
+where `Joining Date` like "%_____12%";
+
+select `First Name`
+from `lms_database`.`fellowship candidate`
+where `Joining Date` like "%_____11%";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
