@@ -43,6 +43,11 @@ from `lms_database`.`candidate qualification`
 where `passing_year`=2019);
 
 
+select `Id`
+from `lms_database`.`fellowship candidate`
+where `Id` In(select `Id`
+from `lms_database`.`candidate qualification`
+where `degree_name`="MCA");
 
 
 
