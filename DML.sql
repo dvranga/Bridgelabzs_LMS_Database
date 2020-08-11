@@ -139,3 +139,13 @@ INSERT INTO `lms_database`.`lab threshold` (`Id`, `lab_id`, `lab_capacity`, `sta
 INSERT INTO `lms_database`.`lab threshold` (`Id`, `lab_id`, `lab_capacity`, `status`, `creator_stamp`, `creator_user`) VALUES ('3', '3', '100', '0', '2020-08-11 12:06:00', 'ranganath');
 INSERT INTO `lms_database`.`lab threshold` (`Id`, `lab_id`, `lab_capacity`, `status`, `creator_stamp`, `creator_user`) VALUES ('4', '4', '100', '0', '2020-08-11 12:07:00', 'ranganath');
 INSERT INTO `lms_database`.`lab threshold` (`Id`, `lab_id`, `lab_capacity`, `status`, `creator_stamp`, `creator_user`) VALUES ('5', '5', '100', '0', '2020-08-11 12:08:00', 'ranganath');
+
+INSERT INTO `lms_database`.`maker program` (`Id`, `tech_stack_id`, `tech_type_id`, `is_program_approved`, `creator_stamp`, `creator_user`) VALUES ('1', '1', '1', '0', '2020-08-11 12:11:00', 'ranganath');
+INSERT INTO `lms_database`.`maker program` (`Id`, `tech_stack_id`, `tech_type_id`, `is_program_approved`, `creator_stamp`, `creator_user`) VALUES ('2', '2', '2', '0', '2020-08-11 12:12:00', 'ranganath');
+
+
+INSERT INTO `lms_database`.`company requirement` (`Id`, `company_id`, `city`, `is_doc_verifrication`, `no_of_engg`, `status`, `creator_stamp`, `creator_user`, `tech_stack_id`, `tech_type_id`, `maker_program_id`, `lead_id`, `ideation_engg_id`, `buddy_engg_id`) VALUES ('1', '1', 'bengalore', '0', '1', '0', '2020-08-11 12:08:00', 'ranganath', '1', '1', '1', '1', '1', '1');
+INSERT INTO `lms_database`.`company requirement` (`Id`, `company_id`, `city`, `is_doc_verifrication`, `no_of_engg`, `status`, `creator_stamp`, `creator_user`, `tech_stack_id`, `tech_type_id`, `maker_program_id`, `lead_id`, `ideation_engg_id`, `buddy_engg_id`) VALUES ('2', '2', 'mumbai', '0', '2', '0', '2020-08-11 12:09:00', 'ranganath', '1', '1', '1', '1', '1', '1');
+
+INSERT INTO `lms_database`.`candidate stack assignment` (`Id`, `requirement_id`, `candidate_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('1', '1', '1', '0', '2020-08-11 12:14:00', 'ranganath');
+INSERT INTO `lms_database`.`candidate stack assignment` (`Id`, `requirement_id`, `candidate_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('2', '2', '2', '0', '2020-08-11 12:15:00', 'ranganath');
