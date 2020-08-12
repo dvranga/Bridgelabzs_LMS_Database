@@ -63,7 +63,7 @@ from `lms_database`.`fellowship candidate`
 where `Joining Date` like "%_____11%";
 
 -- 12-find name of candidates which is ending date accounding to joining date if joining date is 22-02-2019?
-select `First Name`,date_sub();
+
 
 
 -- 13-find all candidates which is passed out in 2019 year?-- 
@@ -146,7 +146,29 @@ where lab.`location`In("mumbai","pune","bengalore");
 
 -- 23-find buddy mententors and ideation mentor and which technology assign to perticular candidate if candidate id is 6?
 
+select `First Name`,`tech_name`,`mentor`.`mentor_type` as Ideation,`mentor`.`mentor_type` as buddy_mentor
+from `fellowship candidate`
+join mentor
+on `fellowship candidate`.`Hired Lab`=mentor.`lab_id`
+join `candidate stack assignment`
+on `fellowship candidate`.`Id`=`candidate stack assignment`.`candidate_id`
+join `company requirement`
+on `candidate stack assignment`.`requirement_id`=`company requirement`.`Id`
+join `tech stack`
+on `company requirement`.`tech_stack_id`=`tech stack`.`Id`
+where `fellowship candidate`.Id=6;
 
 
+select `First Name`,`tech_name`
+from `fellowship candidate`
+join `mentor`
+on `fellowship candidate`.`Hired Lab`=mentor.`lab_id`
+join `candidate stack assignment`
+on `fellowship candidate`.`Id`=`candidate stack assignment`.`candidate_id`
+join `company requirement`
+on `candidate stack assignment`.`requirement_id`=`company requirement`.`Id`
+join `tech stack`
+on `company requirement`.`tech_stack_id`=`tech stack`.`Id`
+where `fellowship candidate`.Id=6;
 
 
