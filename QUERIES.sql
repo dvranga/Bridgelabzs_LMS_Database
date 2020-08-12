@@ -62,6 +62,9 @@ select `First Name`
 from `lms_database`.`fellowship candidate`
 where `Joining Date` like "%_____11%";
 
+-- 12-find name of candidates which is ending date accounding to joining date if joining date is 22-02-2019?
+select `First Name`,date_sub();
+
 
 -- 13-find all candidates which is passed out in 2019 year?-- 
 select `First Name`
@@ -101,13 +104,13 @@ where Id=4;
 
 
 
---- 18-how many week remaining of candidate in the bridglabz from today if candidate id is 5
+-- --- 18-how many week remaining of candidate in the bridglabz from today if candidate id is 5
 select Id,`First Name`,16-(week(curdate())-week(`Joining date`))as weeksLeft
 from `fellowShip candidate`
 where Id=5;
 
 
---- 19-how many days remaining of candidate in the bridgelabz from today if candidate is is 5
+-- --- 19-how many days remaining of candidate in the bridgelabz from today if candidate is is 5
 select Id,`First Name`,(112-datediff(curdate(),`joining date`))as daysLeft
 from `fellowShip candidate`
 where Id=5;
@@ -130,14 +133,18 @@ on `candidate stack assignment`.`requirement_id`=`company requirement`.Id
 join company
 on `company requirement`.`company_id`=`company`.Id;
 
--- 22-find all condidate and mentors which is related to lab= banglore/mumbai/pune.?
-select `First Name`,`mentor`.`name`
-from `lab`
+-- 22-find all condidate and mentors which is related to lab= banglore/mumbai/pune.?-- 
+select `First Name`,`mentor`.`name`,`lab`.location
+from `fellowship candidate`
 join `lab threshold`
-on lab.`Id`=`lab threshold`.`lab_id`
-join 
-where lab.`location`In("mumbai","pune","bengalore")
+on `fellowship candidate`.`Hired Lab`=`lab threshold`.`lab_id`
+join lab
+on `lab threshold`.`lab_id`=`lab`.`Id`
+join mentor
+on `lab`.Id=`mentor`.`lab_id`
+where lab.`location`In("mumbai","pune","bengalore");
 
+-- 23-find buddy mententors and ideation mentor and which technology assign to perticular candidate if candidate id is 6?
 
 
 
