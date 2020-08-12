@@ -1,21 +1,23 @@
 -- 1- find all candidate having java technology?
 select `First Name`
- from `lms_database`.`fellowship candidate`
- where `Id`in(select `Id`
- from `lms_database`.`tech stack`
- where `tech_name`="java");
-
+from `candidate stack assignment`
+join `fellowship candidate`
+on `candidate stack assignment`.`candidate_id`=`fellowship candidate`.Id
+join `company requirement`
+on `candidate stack assignment`.`requirement_id`=`company requirement`.Id
+join `tech stack`
+on `company requirement`.`tech_stack_id`=`tech stack`.Id
+where `tech stack`.`tech_name`="java";
 
 
 -- 2.query to find mentors with java technology
-SELECT mentor.name,mentor.`mentor_type`,`tech stack`.tech_name
-from mentor 
-join `mentor tech stack`
-on mentor.Id= `mentor tech stack`.mentor_id
+select mentor.name,`tech stack`.tech_name
+from `mentor tech stack`
+join `mentor`
+on `mentor tech stack`.`tech_stack_id` =`mentor`.`Id`
 join `tech stack`
-on `mentor tech stack`.`tech_stack_id`=`tech stack`.Id
+on `tech stack`.Id=`mentor tech stack`.`tech_stack_id`
 where `tech stack`.`tech_name`="java";
-
 
 -- 7- find name of candidate which did not assign technology?
 select `First Name`
@@ -98,20 +100,43 @@ from `lms_database`.`fellowship candidate`
 where Id=4;
 
 
--- 21-find name and other details and name of company which is assign to condidate?.
-select  `fellowship candidate`.*,`name`
-from `lms_database`.`fellowship candidate`,`lms_database`.`company`
-where `fellowship candidate`.Id=`company`.Id ;
 
-select `First Name`,`name`
-from `lms_database`.`fellowship candidate` INNER JOIN `lms_database`.`company`
-ON `fellowship candidate`.Id=`company`.Id;
+--- 18-how many week remaining of candidate in the bridglabz from today if candidate id is 5
+select Id,`First Name`,16-(week(curdate())-week(`Joining date`))as weeksLeft
+from `fellowShip candidate`
+where Id=5;
+
+
+--- 19-how many days remaining of candidate in the bridgelabz from today if candidate is is 5
+select Id,`First Name`,(112-datediff(curdate(),`joining date`))as daysLeft
+from `fellowShip candidate`
+where Id=5;
+
+
+-- 20-find candidates which is deployed?
+select `First Name`
+from `fellowship candidate`
+join `candidate stack assignment`
+on `fellowship candidate`.`Id`=`candidate stack assignment`.`candidate_id`
+where `candidate stack assignment`.`status`=true;
+
+-- 21-find name and other details and name of company which is assign to condidate?.
+select  `fellowship candidate`.*,`company`.`name`
+from `fellowship candidate`
+join `candidate stack assignment`
+on `fellowship candidate`.Id=`candidate stack assignment`.`candidate_id`
+join `company requirement`
+on `candidate stack assignment`.`requirement_id`=`company requirement`.Id
+join company
+on `company requirement`.`company_id`=`company`.Id;
 
 -- 22-find all condidate and mentors which is related to lab= banglore/mumbai/pune.?
 select `First Name`,`mentor`.`name`
-from `lms_database`.`fellowship candidate`,`lms_database`.`mentor`
-where `fellowship candidate`.Id=`mentor`.Id;
-
+from `lab`
+join `lab threshold`
+on lab.`Id`=`lab threshold`.`lab_id`
+join 
+where lab.`location`In("mumbai","pune","bengalore")
 
 
 
