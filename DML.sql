@@ -432,3 +432,62 @@ UPDATE `lms_database`.`mentor` SET `mentor_type` = 'Lead', `lab_id` = '2' WHERE 
 UPDATE `lms_database`.`mentor` SET `mentor_type` = 'Lead', `lab_id` = '2' WHERE (`Id` = '15');
 UPDATE `lms_database`.`mentor` SET `lab_id` = '2' WHERE (`Id` = '16');
 UPDATE `lms_database`.`mentor` SET `mentor_type` = 'Buddy' WHERE (`Id` = '1');
+
+
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('1', '1', '1', '2019-11-28', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('2', '1', '2', '2019-11-28', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('3', '1', '3', '2019-11-28', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('4', '1', '4', '2019-11-28', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('5', '1', '5', '2019-11-28', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('6', '2', '6', '2019-12-02', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('7', '2', '7', '2019-12-02', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('8', '2', '8', '2019-12-02', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('9', '2', '9', '2019-12-02', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('10', '2', '10', '2019-12-02', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('11', '3', '11', '2020-01-01', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('12', '3', '12', '2020-01-01', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('13', '3', '13', '2020-01-01', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('14', '3', '14', '2020-01-01', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('15', '3', '15', '2020-01-01', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('16', '4', '16', '2020-02-02', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('17', '4', '17', '2020-02-02', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('18', '4', '18', '2020-02-02', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('19', '4', '19', '2020-02-02', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('20', '4', '20', '2020-02-02', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('21', '5', '21', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('22', '5', '22', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('23', '5', '23', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('24', '5', '24', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('25', '5', '25', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('26', '6', '26', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('27', '6', '27', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('28', '6', '28', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('29', '6', '29', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('30', '6', '30', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('31', '7', '31', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('32', '7', '32', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('33', '7', '33', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('34', '7', '34', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('35', '7', '35', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('36', '8', '36', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('37', '8', '37', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('38', '8', '38', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('39', '8', '39', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('40', '8', '40', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('41', '9', '41', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('42', '9', '42', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('43', '9', '43', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('44', '9', '44', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('45', '9', '45', '2020-02-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('46', '10', '46', '2020-03-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('47', '10', '47', '2020-03-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('48', '10', '48', '2020-03-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('49', '10', '49', '2020-03-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
+INSERT INTO `lms_database`.`candidate_stack_assignment` (`id`, `requirement_id`, `candidate_id`, `assign_date`, `status`, `creator_stamp`, `creator_user`) VALUES ('50', '10', '50', '2020-03-25', '0', '2020-08-11 12:04:00.000000', 'Yeshwanth');
