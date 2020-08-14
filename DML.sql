@@ -377,3 +377,26 @@ UPDATE `lms_database`.`fellowship_candidate` SET `Parent_Mobile_Number` = '74832
 UPDATE `lms_database`.`fellowship_candidate` SET `Parent_Mobile_Number` = '7483247048' WHERE (`Id` = '48');
 UPDATE `lms_database`.`fellowship_candidate` SET `Parent_Mobile_Number` = '7483247049' WHERE (`Id` = '49');
 UPDATE `lms_database`.`fellowship_candidate` SET `Parent_Mobile_Number` = '7483247050' WHERE (`Id` = '50');
+
+
+
+INSERT INTO `lms_database1`.`hired_candidate` (`id`, `first_name`, `middle_name`, `last_name`, `emailId`, `hired_city`, `hired_date`, `hired_lab`, `mobile_number`, `permanent_pincode`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `status`, `creator_stamp`, `creator_user`)
+ VALUES ('1', 'Ranganath', 'Devangm', 'devangmranganath@gmail.com', 'Bangalore', '2020-08-11', '7483247031', '515231', 'Good', 'Good', '2020-08-10 01:00:01', 'Ranganath');
+ INSERT INTO `lms_database1`.`hired_candidate` (`id`, `first_name`, `middle_name`, `last_name`, `emailId`, `hired_city`, `hired_date`, `hired_lab`, `mobile_number`, `permanent_pincode`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `status`, `creator_stamp`, `creator_user`)
+ VALUES ('2', 'Ramu', 'Devangm', 'devangmranganath1@gmail.com', 'Bangalore', '2020-08-11', '7483247032', '515231', 'Good', 'Good', '2020-08-10 02:00:01', 'Ranganath');
+ INSERT INTO `lms_database1`.`hired_candidate` (`id`, `first_name`, `middle_name`, `last_name`, `emailId`, `hired_city`, `hired_date`, `hired_lab`, `mobile_number`, `permanent_pincode`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `status`, `creator_stamp`, `creator_user`)
+ VALUES ('3', 'Somu', 'Devangm', 'devangmranganath2@gmail.com', 'Bangalore', '2020-08-11', '7483247033', '515231', 'Good', 'Good', '2020-08-10 03:00:01', 'Ranganath');
+ INSERT INTO `lms_database1`.`hired_candidate` (`id`, `first_name`, `middle_name`, `last_name`, `emailId`, `hired_city`, `hired_date`, `hired_lab`, `mobile_number`, `permanent_pincode`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `status`, `creator_stamp`, `creator_user`)
+ VALUES ('4', 'Rajesh', 'Devangm', 'devangmranganath3@gmail.com', 'Bangalore', '2020-08-11', '7483247034', '515231', 'Good', 'Good', '2020-08-10 04:00:01', 'Ranganath');
+ INSERT INTO `lms_database1`.`hired_candidate` (`id`, `first_name`, `middle_name`, `last_name`, `emailId`, `hired_city`, `hired_date`, `hired_lab`, `mobile_number`, `permanent_pincode`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `status`, `creator_stamp`, `creator_user`)
+ VALUES ('5', 'Rakesh', 'Devangm', 'devangmranganath4@gmail.com', 'Bangalore', '2020-08-11', '7483247035', '515231', 'Good', 'Good', '2020-08-10 05:00:01', 'Ranganath');
+ INSERT INTO `lms_database1`.`hired_candidate` (`id`, `first_name`, `middle_name`, `last_name`, `emailId`, `hired_city`, `hired_date`, `hired_lab`, `mobile_number`, `permanent_pincode`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `status`, `creator_stamp`, `creator_user`)
+VALUES ('6', 'Lokesh', 'Devangm', 'devangmranganath5@gmail.com', 'Bangalore', '2020-08-11', '7483247036', '515231', 'Good', 'Good', '2020-08-10 06:00:01', 'Ranganath');
+INSERT INTO `lms_database1`.`hired_candidate` (`id`, `first_name`, `middle_name`, `last_name`, `emailId`, `hired_city`, `hired_date`, `hired_lab`, `mobile_number`, `permanent_pincode`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `status`, `creator_stamp`, `creator_user`)
+ VALUES ('7', 'Mahesh', 'Devangm', 'devangmranganath6@gmail.com', 'Bangalore', '2020-08-11', '7483247037', '515231', 'Good', 'Good', '2020-08-10 07:00:01', 'Ranganath');
+ INSERT INTO `lms_database1`.`hired_candidate` (`id`, `first_name`, `middle_name`, `last_name`, `emailId`, `hired_city`, `hired_date`, `hired_lab`, `mobile_number`, `permanent_pincode`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `status`, `creator_stamp`, `creator_user`)
+ VALUES ('8', 'Ganesh', 'Devangm', 'devangmranganath7@gmail.com', 'Bangalore', '2020-08-11', '7483247038', '515231', 'Good', 'Good', '2020-08-10 08:00:01', 'Ranganath');
+ INSERT INTO `lms_database1`.`hired_candidate` (`id`, `first_name`, `middle_name`, `last_name`, `emailId`, `hired_city`, `hired_date`, `hired_lab`, `mobile_number`, `permanent_pincode`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `status`, `creator_stamp`, `creator_user`)
+ VALUES ('9', 'Suresh', 'Devangm', 'devangmranganath8@gmail.com', 'Bangalore', '2020-08-11', '7483247039', '515231', 'good', 'good', '2020-08-10 09:00:01', 'Ranganath');
+ INSERT INTO `lms_database1`.`hired_candidate` (`id`, `first_name`, `middle_name`, `last_name`, `emailId`, `hired_city`, `hired_date`, `hired_lab`, `mobile_number`, `permanent_pincode`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `status`, `creator_stamp`, `creator_user`)
+VALUES ('10', 'Naresh', 'Devangm', 'devangmranganath9@gmail.com', 'Bangalore', '2020-08-11', '7483247030', '515231', 'Good', 'Good', '2020-08-10 10:00:01', 'Ranganath');

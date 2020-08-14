@@ -1,173 +1,173 @@
-create schema `lms_database`;
+create schema `lms_database1`;
 
 
-CREATE TABLE `lms_database`.`userdetails` (
-  `Id` int NOT NULL AUTO_INCREMENT,
-  `email` varchar(45) DEFAULT NULL,
+CREATE TABLE `lms_database1`.`userDetails` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `emailId` varchar(45) DEFAULT NULL,
   `first_name` varchar(45) DEFAULT NULL,
   `last_name` varchar(45) DEFAULT NULL,
   `Password` varchar(45) DEFAULT NULL,
-  `contact_number` int DEFAULT NULL,
+  `contact_number` bigint(10) DEFAULT NULL,
   `verified` tinyint DEFAULT NULL,
-  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_stamp` timestamp(6) DEFAULT NULL,
   `creator_user` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`Id`)
+  PRIMARY KEY (`id`)
 );
 
-CREATE TABLE `lms_database`. `hired candidate` (
-  `Id` int NOT NULL,
-  `First Name` varchar(25) DEFAULT NULL,
-  `Middle Name` varchar(25) DEFAULT NULL,
-  `Last Name` varchar(25) DEFAULT NULL,
-  `EmailId` varchar(45) DEFAULT NULL,
-  `Hired City` varchar(45) DEFAULT NULL,
-  `Hired Date` date DEFAULT NULL,
-  `Hired Lab` varchar(45) DEFAULT NULL,
-  `Mobile Number` varchar(45) DEFAULT NULL,
-  `Permanent Pincode` varchar(45) DEFAULT NULL,
-  `Attitude` varchar(45) DEFAULT NULL,
-  `Communication Remark` varchar(45) DEFAULT NULL,
-  `Knowledge Remark` varchar(45) DEFAULT NULL,
-  `Aggregate Remark` varchar(45) DEFAULT NULL,
-  `Status` varchar(45) DEFAULT NULL,
-  `Creator Stamp` varchar(45) DEFAULT NULL,
-  `Creator User` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`Id`)
+CREATE TABLE `lms_database1`. `hired_candidate` (
+  `id` int NOT NULL,
+  `first_name` varchar(25) DEFAULT NULL,
+  `middle_name` varchar(25) DEFAULT NULL,
+  `last_name` varchar(25) DEFAULT NULL,
+  `emailId` varchar(45) DEFAULT NULL,
+  `hired_city` varchar(45) DEFAULT NULL,
+  `hired_date` date DEFAULT NULL,
+  `hired_lab` varchar(45) DEFAULT NULL,
+  `mobile_number` bigint(10) DEFAULT NULL,
+  `permanent_pincode` bigint(6) DEFAULT NULL,
+  `attitude` varchar(45) DEFAULT NULL,
+  `communication_remark` varchar(45) DEFAULT NULL,
+  `knowledge_remark` varchar(45) DEFAULT NULL,
+  `aggregate_remark` varchar(45) DEFAULT NULL,
+  `status` tinyint DEFAULT NULL,
+  `creator_stamp` tinyint DEFAULT NULL,
+  `creator_user` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 );
 
 
-CREATE TABLE `lms_database`. `fellowship candidate` (
-  `Id` int NOT NULL,
-  `First Name` varchar(25) DEFAULT NULL,
-  `Middle Name` varchar(25) DEFAULT NULL,
-  `Last Name` varchar(25) DEFAULT NULL,
-  `EmailId` varchar(45) DEFAULT NULL,
-  `Hired City` varchar(45) DEFAULT NULL,
+CREATE TABLE `lms_database`. `fellowship_candidate` (
+  `id` int NOT NULL,
+  `first_name` varchar(25) DEFAULT NULL,
+  `middle_name` varchar(25) DEFAULT NULL,
+  `last_name` varchar(25) DEFAULT NULL,
+  `emailId` varchar(45) DEFAULT NULL,
+  `hired_city` varchar(45) DEFAULT NULL,
   `Degree` varchar(45) DEFAULT NULL,
-  `Hired Date` date DEFAULT NULL,
-  `Mobile Number` int DEFAULT NULL,
-  `Permanent Pincode` varchar(45) DEFAULT NULL,
-  `Hired Lab` varchar(45) DEFAULT NULL,
-  `Attitude` varchar(45) DEFAULT NULL,
-  `Communication Remark` varchar(45) DEFAULT NULL,
-  `Knowledge Remark` varchar(45) DEFAULT NULL,
-  `Aggregate Remark` varchar(45) DEFAULT NULL,
-  `Creator Stamp` varchar(45) DEFAULT NULL,
-  `Creator User` varchar(45) DEFAULT NULL,
-  `Birth Date` date DEFAULT NULL,
-  `Is Birth Date Verified` tinyint DEFAULT NULL,
-  `Parent Name` varchar(45) DEFAULT NULL,
-  `Parent Occupation` varchar(45) DEFAULT NULL,
-  `Parent Mobile Number` int DEFAULT NULL,
-  `Parents Annual Salary` double DEFAULT NULL,
-  `Local Address` varchar(45) DEFAULT NULL,
-  `Permanent Address` varchar(45) DEFAULT NULL,
-  `Photo Path` varchar(45) DEFAULT NULL,
-  `Joining Date` date DEFAULT NULL,
-  `Candidtate Status` varchar(45) DEFAULT NULL,
-  `Personal Information` varchar(45) DEFAULT NULL,
-  `Bank Information` varchar(45) DEFAULT NULL,
-  `Educational Information` varchar(45) DEFAULT NULL,
-  `Document Status` tinyint DEFAULT NULL,
-  `Remark` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`Id`)
+  `hired_date` date DEFAULT NULL,
+  `mobile_number` bigint(10) DEFAULT NULL,
+  `permanent_pincode` bigint(6) DEFAULT NULL,
+  `hired_lab` int DEFAULT NULL,
+  `attitude` varchar(45) DEFAULT NULL,
+  `communication_remark` varchar(45) DEFAULT NULL,
+  `knowledge_remark` varchar(45) DEFAULT NULL,
+  `aggregate_remark` varchar(45) DEFAULT NULL,
+  `creator_stamp` timestamp(6) DEFAULT NULL,
+  `creator_user` varchar(45) DEFAULT NULL,
+  `birth_date` date DEFAULT NULL,
+  `is_birth_date_verified` tinyint DEFAULT NULL,
+  `parent_name` varchar(45) DEFAULT NULL,
+  `parent_occupation` varchar(45) DEFAULT NULL,
+  `parent_mobile_number` bigint(10) DEFAULT NULL,
+  `parents_annual_salary` double DEFAULT NULL,
+  `local_address` varchar(45) DEFAULT NULL,
+  `permanent_address` varchar(45) DEFAULT NULL,
+  `photo_path` varchar(45) DEFAULT NULL,
+  `joining_date` date DEFAULT NULL,
+  `candidtate_status` varchar(45) DEFAULT NULL,
+  `personal_information` varchar(45) DEFAULT NULL,
+  `bank_information` tinyint DEFAULT NULL,
+  `educational_information` varchar(45) DEFAULT NULL,
+  `document_status` tinyint DEFAULT NULL,
+  `remark` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ;
 
 
-CREATE TABLE `lms_database`. `candidate bank details` (
-  `Id` int NOT NULL,
-  `Candidate Id` int DEFAULT NULL,
-  `Name` varchar(45) DEFAULT NULL,
-  `Account Number` int DEFAULT NULL,
-  `Is Account Num Verified` tinyint DEFAULT NULL,
-  `ifsc code` varchar(25) DEFAULT NULL,
-  `is_ifsc_code_verified` varchar(45) DEFAULT NULL,
+CREATE TABLE `lms_database`. `candidate_bank_details` (
+  `id` int NOT NULL,
+  `candidate_id` int DEFAULT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `account_number` bigint(11) DEFAULT NULL,
+  `is_account_num_verified` tinyint DEFAULT NULL,
+  `ifsc_code` varchar(25) DEFAULT NULL,
+  `is_ifsc_code_verified` tinyint DEFAULT NULL,
   `pan_number` varchar(25) DEFAULT NULL,
   `is_pan_number_verified` tinyint DEFAULT NULL,
-  `addhaar_num` int DEFAULT NULL,
+  `addhaar_num` bigint DEFAULT NULL,
   `is_addhaar_num_verified` tinyint DEFAULT NULL,
-  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_stamp` timestamp(6) DEFAULT NULL,
   `creator_user` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`Id`),
-  FOREIGN KEY (`Candidate Id`) REFERENCES `fellowship candidate` (`Id`)
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`candidate_id`) REFERENCES `fellowship_candidate` (`id`)
 ) ;
 
 
-CREATE TABLE `lms_database`. `candidate qualification` (
-  `Id` int NOT NULL,
+CREATE TABLE `lms_database`. `candidate_qualification` (
+  `id` int NOT NULL,
   `candidate_id` int DEFAULT NULL,
   `diploma` varchar(45) DEFAULT NULL,
   `degree_name` varchar(45) DEFAULT NULL,
   `is_degree_name_verified` tinyint DEFAULT NULL,
   `employee_decipline` varchar(45) DEFAULT NULL,
   `is_employee_decipline_verified` tinyint DEFAULT NULL,
-  `passing_year` varchar(45) DEFAULT NULL,
+  `passing_year` int DEFAULT NULL,
   `is_passing_year_verified` tinyint DEFAULT NULL,
   `aggr_per` double DEFAULT NULL,
   `final_year_per` double DEFAULT NULL,
   `is_final_year_per_verified` tinyint DEFAULT NULL,
   `training_institute` varchar(45) DEFAULT NULL,
   `is_training_institute_verified` tinyint DEFAULT NULL,
-  `training_duration_month` varchar(45) DEFAULT NULL,
+  `training_duration_month` int DEFAULT NULL,
   `is_training_duration_month_verified` tinyint DEFAULT NULL,
   `other_training` varchar(45) DEFAULT NULL,
   `is_other_training_verified` tinyint DEFAULT NULL,
-  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_stamp` timestamp(6) DEFAULT NULL,
   `creator_user` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`Id`),
-  FOREIGN KEY (`candidate_id`) REFERENCES `fellowship candidate` (`Id`)
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`candidate_id`) REFERENCES `fellowship_candidate` (`id`)
 );
 
 CREATE TABLE `lms_database`.`candidate document` (
-  `Id` int NOT NULL,
+  `id` int NOT NULL,
   `candidate_id` int DEFAULT NULL,
   `doc_type` varchar(45) DEFAULT NULL,
   `doc_path_status` tinyint DEFAULT NULL,
-  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_stamp` timestamp(6) DEFAULT NULL,
   `creator_user` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`Id`),
-  FOREIGN KEY (`candidate_id`) REFERENCES `fellowship candidate` (`Id`)
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`candidate_id`) REFERENCES `fellowship_candidate` (`id`)
 );
 
 
 
 CREATE TABLE `lms_database`. `company` (
-  `Id` int NOT NULL,
+  `id` int NOT NULL,
   `name` int DEFAULT NULL,
   `address` varchar(45) DEFAULT NULL,
   `location` varchar(45) DEFAULT NULL,
   `status` tinyint DEFAULT NULL,
   `creator_stamp` varchar(45) DEFAULT NULL,
   `creator_user` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`Id`)
+  PRIMARY KEY (`id`)
 );
 
 
 
 CREATE TABLE `lms_database`.`tech stack` (
-  `Id` int NOT NULL,
+  `id` int NOT NULL,
   `tech_name` varchar(45) DEFAULT NULL,
   `image_path` varchar(45) DEFAULT NULL,
   `framework` varchar(45) DEFAULT NULL,
   `cur_status` tinyint DEFAULT NULL,
   `creator_stamp` varchar(45) DEFAULT NULL,
   `creator_user` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`Id`)
+  PRIMARY KEY (`id`)
 ) ;
 
 
 CREATE TABLE `lms_database`. `tech type` (
-  `Id` int NOT NULL,
+  `id` int NOT NULL,
   `type_name` varchar(45) DEFAULT NULL,
   `cur_status` tinyint DEFAULT NULL,
   `creator_stamp` varchar(45) DEFAULT NULL,
   `creator_user` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`Id`)
+  PRIMARY KEY (`id`)
 );
 
 
 CREATE TABLE `lms_database`. `maker program` (
-  `Id` int NOT NULL,
+  `id` int NOT NULL,
   `program_name` varchar(45) DEFAULT NULL,
   `program_type` varchar(45) DEFAULT NULL,
   `program_link` longtext,
@@ -178,11 +178,11 @@ CREATE TABLE `lms_database`. `maker program` (
   `status` tinyint DEFAULT NULL,
   `creator_stamp` varchar(45) DEFAULT NULL,
   `creator_user` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`Id`),
+  PRIMARY KEY (`id`),
   KEY `tech_stack_id` (`tech_stack_id`),
   KEY `tech_type_id` (`tech_type_id`),
-  FOREIGN KEY (`tech_stack_id`) REFERENCES `tech stack` (`Id`),
-  FOREIGN KEY (`tech_type_id`) REFERENCES `tech type` (`Id`)
+  FOREIGN KEY (`tech_stack_id`) REFERENCES `tech_stack` (`id`),
+  FOREIGN KEY (`tech_type_id`) REFERENCES `tech_type` (`id`)
 ) ;
 
 
@@ -295,17 +295,17 @@ CREATE TABLE `lms_database`. `company requirement` (
 ) ;
 
 
-CREATE TABLE `lms_database`.`candidate stack assignment` (
-  `Id` int NOT NULL,
+CREATE TABLE `lms_database`.`candidate_stack_assignment` (
+  `id` int NOT NULL,
   `requirement_id` int DEFAULT NULL,
   `candidate_id` int DEFAULT NULL,
   `assign_date` date DEFAULT NULL,
   `status` tinyint DEFAULT NULL,
-  `creator_stamp` varchar(45) DEFAULT NULL,
+  `creator_stamp` timestamp(6) DEFAULT NULL,
   `creator_user` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`Id`),
-  FOREIGN KEY (`requirement_id`) REFERENCES `company requirement` (`Id`),
-  FOREIGN KEY (`candidate_id`) REFERENCES `fellowship candidate` (`Id`)
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`requirement_id`) REFERENCES `company_requirement` (`id`),
+  FOREIGN KEY (`candidate_id`) REFERENCES `fellowship_candidate` (`id`)
 ) ;
 
 
