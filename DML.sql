@@ -400,3 +400,35 @@ INSERT INTO `lms_database1`.`hired_candidate` (`id`, `first_name`, `middle_name`
  VALUES ('9', 'Suresh', 'Devangm', 'devangmranganath8@gmail.com', 'Bangalore', '2020-08-11', '7483247039', '515231', 'good', 'good', '2020-08-10 09:00:01', 'Ranganath');
  INSERT INTO `lms_database1`.`hired_candidate` (`id`, `first_name`, `middle_name`, `last_name`, `emailId`, `hired_city`, `hired_date`, `hired_lab`, `mobile_number`, `permanent_pincode`, `attitude`, `communication_remark`, `knowledge_remark`, `aggregate_remark`, `status`, `creator_stamp`, `creator_user`)
 VALUES ('10', 'Naresh', 'Devangm', 'devangmranganath9@gmail.com', 'Bangalore', '2020-08-11', '7483247030', '515231', 'Good', 'Good', '2020-08-10 10:00:01', 'Ranganath');
+
+
+
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('17', 'Jagan', 'Ideation', '2', '0', '2020-08-11 11:18:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('18', 'Shankar', 'Ideation', '2', '0', '2020-08-11 11:19:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('19', 'Jaysree', 'Buddy', '2', '0', '2020-08-11 11:19:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('20', 'Jothy', 'Buddy', '2', '0', '2020-08-11 11:20:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('21', 'Harish', 'Ideation', '2', '0', '2020-08-11 11:20:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('22', 'Naveen', 'Ideation', '2', '0', '2020-08-11 11:21:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('23', 'Kishore', 'Buddy', '2', '0', '2020-08-11 11:21:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('24', 'Kotesh', 'Buddy', '2', '0', '2020-08-11 11:22:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('25', 'LavaKumar', 'Buddy', '3', '0', '2020-08-11 11:23:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('26', 'Madav', 'Lead', '3', '0', '2020-08-11 11:24:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('27', 'Madu', 'Lead', '3', '0', '2020-08-11 11:25:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('28', 'Mahendra', 'Buddy', '3', '0', '2020-08-11 11:26:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('29', 'Mahesh', 'Ideation', '3', '0', '2020-08-11 11:27:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('30', 'Manohar', 'Ideation', '3', '0', '2020-08-11 11:28:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('31', 'Mohan', 'Buddy', '3', '0', '2020-08-11 11:29:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('32', 'Nagaraj', 'Buddy', '3', '0', '2020-08-11 11:30:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('33', 'Nandheni', 'Ideation', '3', '0', '2020-08-11 11:31:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('34', 'NagurBasha', 'Ideation', '3', '0', '2020-08-11 11:32:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('35', 'Poornima', 'Buddy', '3', '0', '2020-08-11 11:33:00.000000', 'poonam');
+INSERT INTO `lms_database`.`mentor` (`Id`, `name`, `mentor_type`, `lab_id`, `status`, `creator_stamp`, `creator_user`) VALUES ('36', 'Partha', 'Buddy', '3', '0', '2020-08-11 11:34:00.000000', 'poonam');
+UPDATE `lms_database`.`mentor` SET `mentor_type` = 'Buddy', `lab_id` = '1' WHERE (`Id` = '4');
+UPDATE `lms_database`.`mentor` SET `mentor_type` = 'Ideation', `lab_id` = '1' WHERE (`Id` = '6');
+UPDATE `lms_database`.`mentor` SET `mentor_type` = 'Buddy', `lab_id` = '1' WHERE (`Id` = '7');
+UPDATE `lms_database`.`mentor` SET `mentor_type` = 'Buddy', `lab_id` = '1' WHERE (`Id` = '8');
+UPDATE `lms_database`.`mentor` SET `lab_id` = '2' WHERE (`Id` = '13');
+UPDATE `lms_database`.`mentor` SET `mentor_type` = 'Lead', `lab_id` = '2' WHERE (`Id` = '14');
+UPDATE `lms_database`.`mentor` SET `mentor_type` = 'Lead', `lab_id` = '2' WHERE (`Id` = '15');
+UPDATE `lms_database`.`mentor` SET `lab_id` = '2' WHERE (`Id` = '16');
+UPDATE `lms_database`.`mentor` SET `mentor_type` = 'Buddy' WHERE (`Id` = '1');
