@@ -549,3 +549,44 @@ UPDATE `lms_database`.`mentor_tech_stack` SET `tech_stack_id` = '1' WHERE (`Id` 
 UPDATE `lms_database`.`mentor_tech_stack` SET `tech_stack_id` = '1' WHERE (`Id` = '3');
 UPDATE `lms_database`.`mentor_tech_stack` SET `tech_stack_id` = '1' WHERE (`Id` = '4');
 UPDATE `lms_database`.`mentor_tech_stack` SET `tech_stack_id` = '2' WHERE (`Id` = '5');
+
+
+
+INSERT INTO user_engagement_mis
+SELECT fc.candidate_id, tuem.DateTime
+FROM temp_user_engagement_mis tuem
+LEFT OUTER JOIN fellowship_candidate fc ON fc.email_id = tuem.user_name;
+
+
+INSERT INTO `lms_database`.`user_engagement_mis` (`candidate_id`, `date_time`, `cpu_count`, `cpu_working_time`, `cpu_idle_time`, `cpu_percent`, `usage_cpu_count`,
+`number_of_software_interrupts_since_boot`, `number_of_system_calls_since_boot`, `number_of_interrupts_since_boot`, `cpu_avg_load_over_1_min`,
+`cpu_avg_load_over_5_min`, `cpu_avg_load_over_15_min`, `system_total_memory`, `system_used_memory`, `system_free_memory`, `system_active_memory`,
+`system_inactive_memory`, `system_buffers_memory`, `system_cached_memory`, `system_shared_memory`, `system_available_memory`, `disk_total_memory`,
+`disk_used_memory`, `disk_free_memory`, `disk_read_count`, `disk_write_count`, `disk_read_bytes`, `disk_write_bytes`, `time_spent_reading_from_disk`,
+`time_spent_writing_to_disk`, `time_spent_doing_actual_I/Os`, `number_of_bytes_sent`, `number_of_bytes_received`, `number_of_packets_sent`,
+`number_of_packets_received`, `total_number_of_errors_while_receiving`, `total_number_of_errors_while_sending`, `total_number_of_incoming_packets_which_were_dropped`,
+`total_number_of_outgoing_packets_which_were_dropped`, `boot_time`, `keyboard`, `mouse`, `technology`, `files_changed`)
+SELECT fc.id AS candidate_id, tuem.date_time, tuem.cpu_count, tuem.cpu_working_time, tuem.cpu_idle_time, tuem.cpu_percent, tuem.usage_cpu_count,
+tuem.number_of_software_interrupts_since_boot, tuem.number_of_system_calls_since_boot, tuem.number_of_interrupts_since_boot, tuem.cpu_avg_load_over_1_min,
+tuem.cpu_avg_load_over_5_min, tuem.cpu_avg_load_over_15_min, tuem.system_total_memory, tuem.system_used_memory, tuem.system_free_memory, tuem.system_active_memory,
+tuem.system_inactive_memory, tuem.system_buffers_memory, tuem.system_cached_memory, tuem.system_shared_memory, tuem.system_available_memory, tuem.disk_total_memory,
+tuem.disk_used_memory, tuem.disk_free_memory, tuem.disk_read_count, tuem.disk_write_count, tuem.disk_read_bytes, tuem.disk_write_bytes, tuem.time_spent_reading_from_disk,
+tuem.time_spent_writing_to_disk, tuem.`time_spent_doing_actual_I/Os`, tuem.number_of_bytes_sent, tuem.number_of_bytes_received, tuem.number_of_packets_sent,
+tuem.number_of_packets_received, tuem.total_number_of_errors_while_receiving, tuem.total_number_of_errors_while_sending, tuem.total_number_of_incoming_packets_which_were_dropped,
+tuem.total_number_of_outgoing_packets_which_were_dropped, tuem.boot_time, tuem.keyboard, tuem.mouse, tuem.technology,tuem.files_changed
+FROM fellowship_candidate AS fc
+LEFT OUTER JOIN temp_user_engagement_mis AS tuem
+ON fc.email_id = tuem.user_name;
+
+
+DELIMITER //
+
+CREATE PROCEDURE GetAllFellowshipCandidate()
+BEGIN
+	SELECT *  FROM fellowship_candidate;
+END //
+
+DELIMITER ;
+
+
+call GetAllFellowshipCandidate();

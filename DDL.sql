@@ -359,4 +359,55 @@ CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
 ALTER TABLE `lms_database`.`userdetails` 
 CHANGE COLUMN `creator_stamp` `creator_stamp` TIMESTAMP(6) NULL DEFAULT NULL ;
 
+ALTER TABLE `lms_database`.`temp_user_engagement_mis` 
+CHANGE COLUMN `user_name` `user_name` VARCHAR(45) NOT NULL ,
+ADD PRIMARY KEY (`user_name`);
+;
 
+CREATE TABLE `temp_user_engagement_mis` (
+  `DateTime` datetime,
+  `Cpu Count` int not NULL,
+  `Cpu Working Time` double not NULL,
+  `Cpu idle Time` double not NULL,
+  `cpu_percent` double not NULL,
+  `Usage Cpu Count` int not NULL,
+  `number of software interrupts since boot` int not NULL,
+  `number of system calls since boot` int not NULL,
+  `number of interrupts since boot` int not NULL,
+  `cpu avg load over 1 min` double not NULL,
+  `cpu avg load over 5 min` double not NULL,
+  `cpu avg load over 15 min` double not NULL,
+  `system_total_memory` bigint not NULL,
+  `system_used_memory` bigint not NULL,
+  `system_free_memory` bigint not NULL,
+  `system_active_memory` bigint not NULL,
+  `system_inactive_memory` bigint not NULL,
+  `system_buffers_memory` bigint not NULL,
+  `system_cached_memory` bigint not NULL,
+  `system_shared_memory` bigint not NULL,
+  `system_avalible_memory` bigint not NULL,
+  `disk_total_memory` bigint not NULL,
+  `disk_used_memory` bigint not NULL,
+  `disk_free_memory` bigint not NULL,
+  `disk_read_count` bigint not NULL,
+  `disk_write_count` bigint not NULL,
+  `disk_read_bytes` bigint not NULL,
+  `disk_write_bytes` bigint not NULL,
+  `time spent reading from disk` bigint not NULL,
+  `time spent writing to disk` bigint not NULL,
+  `time spent doing actual I/Os` bigint not NULL,
+  `number of bytes sent` bigint not NULL,
+  `number of bytes received` bigint not NULL,
+  `number of packets sent` bigint not NULL,
+  `number of packets recived` bigint not NULL,
+  `total number of errors while receiving` int not NULL,
+  `total number of errors while sending` int not NULL,
+  `total number of incoming packets which were dropped` int not NULL,
+  `total number of outgoing packets which were dropped` int not NULL,
+  `boot_time` time,
+  `user_name` varchar(45) NOT NULL,
+  `keyboard` double not NULL,
+  `mouse` int not NULL,
+  `technology` varchar(45),
+  `files_changed` int not NULL
+) 

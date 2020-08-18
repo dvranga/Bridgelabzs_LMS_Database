@@ -172,3 +172,15 @@ on `company requirement`.`tech_stack_id`=`tech stack`.`Id`
 where `fellowship candidate`.Id=6;
 
 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `mentorTechnology`()
+BEGIN
+select mentor.name,`tech_stack`.tech_name
+from `mentor_tech_stack`
+join `mentor`
+on `mentor_tech_stack`.`tech_stack_id` =`mentor`.`Id`
+join `tech_stack`
+on `tech_stack`.Id=`mentor_tech_stack`.`tech_stack_id`
+where `tech_stack`.`tech_name`="java"
+END
+
+call mentorTechnology;
