@@ -19,6 +19,28 @@ join `tech stack`
 on `tech stack`.Id=`mentor tech stack`.`tech_stack_id`
 where `tech stack`.`tech_name`="java";
 
+-- 3--- find all candidate which is present today
+select fellowship_candidate.Id,first_name
+from user_engagement_mis
+join fellowship_candidate
+on user_engagement_mis.candidate_id=fellowship_candidate.Id
+where DateTime is not null;
+
+--- 4- find all candidate which is come late today
+select user_engagement_mis.candidate_id,first_name
+from user_engagement_mis
+join fellowship_candidate
+on user_engagement_mis.candidate_id=fellowship_candidate.Id
+where time(DateTime) >'09:00:00';
+
+--- 6- find all candidate which is come early today
+select user_engagement_mis.candidate_id,first_name
+from user_engagement_mis
+join fellowship_candidate
+on user_engagement_mis.candidate_id=fellowship_candidate.Id
+where time(DateTime) <'09:00:00';
+
+
 -- 7- find name of candidate which did not assign technology?
 select `First Name`
  from `lms_database`.`fellowship candidate`
@@ -63,8 +85,8 @@ from `lms_database`.`fellowship candidate`
 where `Joining Date` like "%_____11%";
 
 -- 12-find name of candidates which is ending date accounding to joining date if joining date is 22-02-2019?
-
-
+select first_name,adddate(joining_date, interval 4 month ) LastDate
+from fellowship_candidate;
 
 -- 13-find all candidates which is passed out in 2019 year?-- 
 select `First Name`
